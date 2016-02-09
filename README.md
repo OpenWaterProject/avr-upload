@@ -5,6 +5,7 @@
 To load a test "blink" program:
 
 > cd blinker
+
 > sudo ./flash_blink_boot_combo.sh
 
 This loads the .ino file [here](https://gist.github.com/dwblair/aa7a5787d788cf92f3b6), which has been combined with an appropriate bootloader into a single .hex file.
@@ -16,6 +17,7 @@ If the program loads successfully, it should blink the on board LED on pin 9 at 
 To load a test "logger" program:
 
 > cd logger
+
 > sudo ./flash_logger_boot_combo.sh
 
 This loads the .ino file [here](https://gist.github.com/dwblair/6e56cbdf66276bebc4ff), which has been combined with an appropriate bootloader into a single .hex file.
