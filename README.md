@@ -31,7 +31,7 @@ If an micro SD card is present, and it is possible to write to it, the datalogge
 - blink once very briefly (only 20 milliseconds)
 - repeat
 
-** Failure modes **
+**Failure modes**
 
 If the board starts up but no micro SD card is present, or it is not possible to write to it, the datalogger will simply blink constantly at a rapid rate (200 milliseconds on, 200 milliseconds off), ad infinitum. 
 
