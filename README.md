@@ -24,14 +24,17 @@ This loads the .ino file [here](https://gist.github.com/dwblair/6e56cbdf66276beb
 
 If the board starts up successfully, it will first blink quickly 10 times rapidly. (NOTE: in some cases this initial behavior does not seem to appear immediately after programming -- to check, switch the power briefly off and back on after programming).
 
-Then, if an micro SD card is present, and it is possible to write to it, the datalogger will:
+
+If an micro SD card is present, and it is possible to write to it, the datalogger will:
 
 - sleep for 8 seconds (no visible activity)
 - record a line to the micro SD card
 - blink once very briefly (only 20 milliseconds)
 - repeat
 
-If the board starts up but no micro SD card is present, the datalogger will simply blink constantly at a rapid rate (200 milliseconds on, 200 milliseconds off), ad infinitum. 
+** Failure modes **
 
+If the board starts up but no micro SD card is present, or it is not possible to write to it, the datalogger will simply blink constantly at a rapid rate (200 milliseconds on, 200 milliseconds off), ad infinitum. 
 
+If the board starts up and it cannot access the onboard RTC, it will also blink constantly at a rapid rate (200 milliseconds on, 200 milliseconds off), ad infinitum.
 
