@@ -22,8 +22,7 @@ To load a test "logger" program:
 
 This loads the .ino file [here](https://gist.github.com/dwblair/6e56cbdf66276bebc4ff), which has been combined with an appropriate bootloader into a single .hex file.
 
-If the board starts up successfully, it will first blink quickly 10 times rapidly. (NOTE: in some cases this initial behavior does not seem to appear immediately after programming -- to check, switch the power briefly off and back on after programming).
-
+If the board starts up successfully, it will first blink 3 times at a rate of one second ON, one second off. (NOTE: in some cases this initial behavior does not seem to occur immediately after programming -- to check, switch the power briefly off and back on after programming).
 
 If an micro SD card is present, and it is possible to write to it, the datalogger will:
 
@@ -37,4 +36,16 @@ If an micro SD card is present, and it is possible to write to it, the datalogge
 If the board starts up but no micro SD card is present, or it is not possible to write to it, the datalogger will simply blink constantly at a rapid rate (200 milliseconds on, 200 milliseconds off), ad infinitum. 
 
 If the board starts up and it cannot access the onboard RTC, it will also blink constantly at a rapid rate (200 milliseconds on, 200 milliseconds off), ad infinitum.
+
+### Creating a new combined program + bootloader hex file
+
+> cd combining_boot_and_program
+
+> ./combine.sh 
+
+which will produce an out.hex file. 
+
+You can edit the combine.sh file to reflect your own bootloader and program hex file names. 
+
+
 
