@@ -54,4 +54,16 @@ which will produce an out.hex file.
 You can edit the combine.sh file to reflect your own bootloader and program hex file names. 
 
 
+### Notes
+
+all above is on Ubuntu; to install avrdude:
+sudo apt-get install avrdude
+
+sanity check to see if can connect to programmer:
+
+sudo avrdude -c usbtiny -p m328p
+
+followed tutorial here:
+
+https://learn.sparkfun.com/tutorials/installing-an-arduino-bootloader
 
