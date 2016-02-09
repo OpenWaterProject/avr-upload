@@ -22,7 +22,7 @@ To load a test "logger" program:
 
 This loads the .ino file [here](https://gist.github.com/dwblair/6e56cbdf66276bebc4ff), which has been combined with an appropriate bootloader into a single .hex file.
 
-If the board starts up successfully, it will first blink 3 times at a rate of one second ON, one second off. (NOTE: in some cases this initial behavior does not seem to occur immediately after programming -- to check, switch the power briefly off and back on after programming).
+If the board starts up successfully, it will first blink 3 times at a rate of one second ON, one second off. 
 
 If an micro SD card is present, and it is possible to write to it, the datalogger will:
 
